@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Comment App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+   <!-- <div id="backdrop"></div>
+
+    <div class="modal card" id="add-modal">
+      <h2 class="modalContent modal__title" id="modalTitle"></h2>
+        <div class="modal__content">
+          <p class="modalContent" id="modalTextField"></p>
+        </div>
+        <div class="modal__actions">
+          <button class="btn btn--passive">Cancel</button>        
+      </div>
+    </div>
+   -->
+   
+
+
+    <main class="container">
+      <section id="textBox" class="add-comment">
+        <div class="commentImg">
+          <img src="images/comment_image.png"/> 
+          <h1>Comments</h1>
+        </div>
+        <button class="btnAdd"><img src="images/edit.png"> Add New Comment:</button>
+        <div id="comment-section" class="comment-section">
+         <div class="titleBox">
+            <!-- <span>Title:</span> -->
+            <p contenteditable="true" id="title" class="input-box" data-placeholder="Enter tit text..."></p>
+              
+            </p>
+          </div> 
+          <div class="comments-container">
+            <p contenteditable="true" class="input-box" id="comment"data-placeholder="Enter some text...">
+            </p>
+          </div>
+            <button class="btn" id="btn-add">ADD COMMENT</button> 
+            <!-- <button class="btn" id="btn-save">SAVE COMMENT</button>  -->
+        </div>
+        <button class="btn" id="btn-sort">SORT COMMENTS</button> 
+
+      </section>
+      <div id="entry-text" class="card">
+        <p>Your personal comment database!</p>
+      </div>
+      <ul id="comment-list">
+      </ul>
+    </main>
+  </body>
+</html>
